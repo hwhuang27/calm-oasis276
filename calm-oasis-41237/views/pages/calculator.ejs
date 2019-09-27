@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="stylesheets/calculator.css">
+    <script type="text/javascript" src="js/calculator.js"></script>
+    <meta charset="utf-8">
+    <title>CourSys - Formula Tester</title>
+  </head>
+
+  <body style="margin: 0;">
+    <div id="header-div">
+    </div>
+
+    <header style="margin: 50;">
+      <h1>Grade Calculator</h1>
+
+      <form method="post">
+
+          <dt id="redDT">Activities</dt>
+          <dt>Give grades to the numeric activities:</dt>
+
+            <div class="table"><table class="info">
+            	    <tr>
+                    <th align="left">Name</th>
+                    <th align="left">Short Name</th>
+                    <th align="left">Weight</th>
+                    <th align="left">Grade</th>
+                    <th align="left">Percent</th>
+            	    </tr>
+
+                        <tr>
+                        <td>Activity 1</td>
+                        <td>A1</td>
+                        <td><input type="text" name="wbox" class="mytext" /></td>
+                        <td style="font-weight:bold"><input type="text" name="mbox1" class="mytext" oninput="percent()"/> / <input type="text" name="mbox2" class="mytext" oninput="percent()"/></td>
+                        <td id="perc1" class="perc"></td>
+                        </tr>
+
+                        <tr>
+                        <td>Activity 2</td>
+                        <td>A2</td>
+                        <td><input type="text" name="wbox" class="mytext" /></td>
+                        <td style="font-weight:bold"><input type="text" name="mbox1" class="mytext" oninput="percent()" /> / <input type="text" name="mbox2" class="mytext" oninput="percent()"/></td>
+                        <td id="perc2" class="perc"></td>
+                        </tr>
+
+                        <tr>
+                        <td>Activity 3</td>
+                        <td>A3</td>
+                        <td><input type="text" name="wbox" class="mytext" /></td>
+                        <td style="font-weight:bold"><input type="text" name="mbox1" class="mytext" oninput="percent()"/> / <input type="text" name="mbox2" class="mytext" oninput="percent()"/></td>
+                        <td id="perc3" class="perc"></td>
+                        </tr>
+
+                        <tr>
+                        <td>Activity 4</td>
+                        <td>A4</td>
+                        <td><input type="text" name="wbox" class="mytext" /></td>
+                        <td style="font-weight:bold"><input type="text" name="mbox1" class="mytext" oninput="percent()"/> / <input type="text" name="mbox2" class="mytext" oninput="percent()"/></td>
+                        <td id="perc4" class="perc"></td>
+                        </tr>
+
+                </table></div>
+
+          <dt id = "redDT">Result</dt>
+          <dt id = "dispRes"></dt>
+
+          <button name="MEAN" id="rbutton1" class="button" type="button" onClick="getMean()">MEAN</button>
+          <button name="WEIGHTED" id="rbutton2" class="button" type="button" onclick="getWeight()">WEIGHTED</button>
+          <button name="RESET" id="rbutton3" class="button" type="button" onclick="erase()">RESET</button>
+          <button name="RANDOM" id="rbutton4" class="button" type="button" onclick="randumb()">RANDOM</button>
+
+      </form>
+
+    </header>
+
+
+
+    <footer id="site-footer">
+    </footer>
+
+  </body>
+</html>
